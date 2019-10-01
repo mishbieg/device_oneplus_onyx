@@ -62,7 +62,6 @@ persist.camera.cpp.duplication=false
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
 camera.shutter_sound.blacklist=com.oneplus.camera
-
 # Graphics
 persist.hwc.mdpcomp.enable=true
 persist.sys.strictmode.disable=true

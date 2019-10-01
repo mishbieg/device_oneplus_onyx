@@ -65,6 +65,7 @@ on enable-low-power
     write /sys/block/mmcblk1/bdi/read_ahead_kb 2048
 
     setprop vendor.post_boot.parsed 1
+
     start mpdecision
 
 on charger
@@ -79,6 +80,7 @@ on charger
     write /sys/devices/system/cpu/cpu1/online 0
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
+    write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
 on boot
     # Set light thermal restrictions while optimizing apps
